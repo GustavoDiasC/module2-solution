@@ -1,0 +1,130 @@
+h2,section,p{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 16px 0px 16px;
+    gap: 16px;
+}
+
+.section1{
+    background: grey;
+    border: 3px solid black;
+    box-sizing: border-box;
+    width: 400;
+}
+
+.section1 p{
+    padding: 16px 0px 16px 16px;
+}
+
+h2{
+    position: absolute;
+}
+
+.section1 h2{
+    background: #D59898;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    position: relative;
+
+    margin-left: 200px;
+    text-align: center;
+}
+
+.section2{
+    background: grey;
+    border: 3px solid black;
+}
+
+.section2 p{
+    padding: 16px 0px 0px 16px;
+}
+
+h2{
+    position: absolute;
+}
+
+.section2 h2{
+    background: #C14543;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    position: relative;
+    margin-left: 200px;
+    text-align: center;
+    color: white;
+}
+
+.section3{
+    background: grey;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.section3 p{
+    padding: 16px 0px 16px 16px;
+    max-height: 5em;
+    overflow: hidden;
+}
+
+h2{
+    position: absolute;
+}
+
+.section3 h2{
+    background: #E5D198;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    position: relative;
+    margin-left: 200px;
+    text-align: center;
+}
+
+@media (min-width:992px){
+    .section1 h2{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .section2 h2{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .section3 h2{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px){
+    .box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 16px 0px 16px;
+        gap: 16px;
+    }
+
+    .section3{
+        grid-column: 1/-1;
+    }
+
+
+}
+
+@media (max-width: 767px){
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
